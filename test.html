@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <title>MyWorld Test Page</title>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="js/bundle.min.js"></script>
+
+    <script type="text/javascript" src="js/myworld/build/myworld.js"></script>
+
+    <!--
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwAdi97cU5O2VyKxsXFnH4yAjhLJ1_ZFU&callback=initMap"></script>
+    -->
+
+    <script type="text/javascript" src="js/myworld/dummy.js"></script>
+
+    <script type="text/javascript">
+        'use strict';
+
+        initData();
+
+	    function initMap () {
+
+            //  temporary
+            $('#map').css({
+                position: 'absolute',
+                width: '100%',
+                height: '100%'
+            });
+
+            /**
+             * Create map
+             */
+            var map = new MyWorld.Map('#map', {
+                latitude: 61.52401,
+                longitude: 105.318756
+            });
+
+            /**
+             * Create marker for Vladivostok
+             */
+            var markerVladivostok = map.addMarker({
+                latitude: 43.12253732841481,
+                longitude: 131.89793676137924,
+                icon: 'img/pins/ru.png',
+                infoWindow: {
+                    content: 'Vladivostok'
+                }
+            });
+
+            /**
+             * Create marker for Moscow
+             */
+            var markerMoscow = map.addMarker({
+                latitude: 55.755826,
+                longitude: 37.6173,
+                icon: 'img/pins/beer.png',
+                infoWindow: {
+                    content: 'Moscow'
+                }
+            });
+
+            /**
+             * Set auto zoom
+             */
+            map.autoZoom(true);
+
+            /**
+             * Create route from Moscow to Vladivostok
+             */
+            var route = map.addRoute(markerMoscow, markerVladivostok, {
+            });
+            route.show();
+
+            /**
+             * Draw route with red color
+             */
+            route.update({
+                polylineOptions: {
+                    strokeColor: 'red'
+                }
+            });
+
+	    };
+    </script>
+</body>
+
+</html>

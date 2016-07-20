@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <title>MyWorld HTML theme – news</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/nouislider/distribute/nouislider.min.css">
+    <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main>
+        <!--    !zolotukhin  -->
+        <div id="map"></div>
+        <!--    zolotukhin!  -->
+
+        <a href="index.html" class="myworld hidden-xs">myworld</a>
+        <button data-toggle-active=".mobile-menu" class="mobile-menu-toggle mobile-menu-toggle--tablet visible-sm visible-md">
+            <span class="fa fa-bars"></span>
+        </button>
+        <!-- mobile-header -->
+        <header class="mobile-header visible-xs">
+            <button data-toggle-active=".mobile-menu" class="mobile-menu-toggle mobile-header__btn active pull-left"><span class="fa fa-bars"></span></button>
+            <button data-overview-toggle class="mobile-header__btn mobile-header__btn--map pull-right active">
+                <span class="fa fa-map"></span>
+            </button>
+            <a href="index.html" class="myworld">myworld</a>
+        </header>
+        <!-- /mobile-header -->
+        <!-- sidebar -->
+        <div class="sidebar container container--sidebar pull-right full-height">
+            <!-- overview -->
+            <section class="overview overview--mobile-active overview--single sidebar__item active">
+                <!-- overview-header -->
+                <header class="overview__header overview-header overview-block ">
+                    <div class="overview-header-wrapper">
+                        <button class="btn btn--dark btn--filter pull-right">
+                            <span class="btn__icon btn__icon--dark">
+                                    <i class="fa fa-plus"></i>
+                                </span>Add news</button>
+                        <button class="menu-toggle menu-toggle--overview visible-lg">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <h1 class="overview-header__title">News</h1>
+                    </div>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">World</a></li>
+                        <li><a href="cities.html">Russia Cities</a></li>
+                        <li class="active">News</li>
+                    </ol>
+                </header>
+                <!-- /overview-header -->
+                <!-- grid -->
+                <section class="grid">
+                    <div class="overview-block overview-block--fluid grid-container">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="grid-item grid-item--post clearfix col-sm-6">
+                                    <a href="open_news.html" class="grid-item__title">manager it on matart group</a>
+                                    <p class="grid-item__desc">Get a history lesson on possibly the ]world's most famous beverage -- and sample Coca-Cola products from around the globe! Kids will love it...</p>
+                                    <p class="grid-item__date">22.10.2011</p>
+                                </div>
+                                <div class="grid-item grid-item--post clearfix col-sm-6">
+                                    <a href="open_news.html" class="grid-item__title">manager it on matart group</a>
+                                    <p class="grid-item__desc">Get a history lesson on possibly the ]world's most famous beverage</p>
+                                    <p class="grid-item__date">22.10.2011</p>
+                                </div>
+                                <div class="grid-item grid-item--post clearfix col-sm-6">
+                                    <a href="open_news.html" class="grid-item__title">manager it on matart group</a>
+                                    <p class="grid-item__desc">Get a history lesson on possibly the ]world's most famous beverage</p>
+                                    <p class="grid-item__date">22.10.2011</p>
+                                </div>
+                                <div class="grid-item grid-item--post clearfix col-sm-6">
+                                    <a href="open_news.html" class="grid-item__title">manager it on matart group</a>
+                                    <p class="grid-item__desc">Get a history lesson on possibly the ]world's most famous</p>
+                                    <p class="grid-item__date">22.10.2011</p>
+                                </div>
+                                <div class="grid-item grid-item--post clearfix col-sm-6">
+                                    <a href="open_news.html" class="grid-item__title">manager it on matart group</a>
+                                    <p class="grid-item__desc">Get a history lesson on possibly the ]world's most famous beverage -- and sample Coca-Cola products from around the globe! Kids will love it...</p>
+                                    <p class="grid-item__date">22.10.2011</p>
+                                </div>
+                                <div class="grid-item grid-item--post clearfix col-sm-6">
+                                    <a href="open_news.html" class="grid-item__title">manager it on matart group</a>
+                                    <p class="grid-item__desc">Get a history lesson on possibly the ]world's most famous beverage</p>
+                                    <p class="grid-item__date">22.10.2011</p>
+                                </div>
+                                <div class="grid-item grid-item--post clearfix col-sm-6">
+                                    <a href="open_news.html" class="grid-item__title">manager it on matart group</a>
+                                    <p class="grid-item__desc">Get a history lesson on possibly the ]world's most famous beverage</p>
+                                    <p class="grid-item__date">22.10.2011</p>
+                                </div>
+                                <div class="grid-item grid-item--post clearfix col-sm-6">
+                                    <a href="open_news.html" class="grid-item__title">manager it on matart group</a>
+                                    <p class="grid-item__desc">Get a history lesson on possibly the ]world's most famous</p>
+                                    <p class="grid-item__date">22.10.2011</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /grid -->
+                <!-- btns-block -->
+                <div class="btns-block text-center overview-block">
+                    <button class="btn btn--gray btn--long">Load more</button>
+                </div>
+                <!-- /btns-block -->
+            </section>
+            <!-- /overview -->
+            <!-- menu -->
+            <nav class="menu sidebar__item menu--hidden">
+                <a href="index.html" class="menu-item">
+                    <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="14px" viewBox="0 0 16 14">
+                        <path fillRule="evenodd" d="M-0 0C-0 0 5 3 5 3 5 3 5 14 5 14 5 14-0 11-0 11-0 11-0 0-0 0ZM 11 11C 11 11 16 14 16 14 16 14 16 3 16 3 16 3 11 0 11 0 11 0 11 11 11 11ZM 6 14C 6 14 10 11 10 11 10 11 10 0 10 0 10 0 6 3 6 3 6 3 6 14 6 14Z" fill="rgb(43,43,42)" />
+                    </svg>
+                    <span class="menu-item__title">WORLD</span>
+                </a>
+                <a href="city.html" class="menu-item">
+                    <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="16px" viewBox="0 0 15 16">
+                        <path fillRule="evenodd" d="M 15 4.5C 12.94 5.26 11.38 5.8 10 7.5 8.77 9.02 7 9.55 5 8.54 5 8.54 5 14 5 14 5 14 4 14 4 14 4 14 4 0.5 4 0.5 4 0.22 4.22 0 4.5 0 4.78 0 5 0.22 5 0.5 6.11 2.11 8.04 2.47 10 2.5 13 2.54 15 4.5 15 4.5ZM 6 11.13C 6 11.13 6 12.15 6 12.15 7.18 12.39 8 12.9 8 13.5 8 14.33 6.43 15 4.5 15 2.57 15 1 14.33 1 13.5 1 12.9 1.82 12.39 3 12.15 3 12.15 3 11.13 3 11.13 1.18 11.45-0 12.33-0 13.5-0 14.97 1.85 16 4.5 16 7.15 16 9 14.97 9 13.5 9 12.33 7.82 11.45 6 11.13Z" fill="rgb(43,43,42)" />
+                    </svg>
+                    <span class="menu-item__title">CITY PAGE</span>
+                </a>
+                <a href="places.html" class="menu-item">
+                    <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M-0 7C-0 7 3 2 3 2 3 2 13 2 13 2 13 2 16 7 16 7 16 7-0 7-0 7ZM 9-0C 9-0 7-0 7-0 7-0 7 1 7 1 7 1 9 1 9 1 9 1 9-0 9-0ZM 15 8C 15 8 15 16 15 16 15 16 9 16 9 16 9 16 9 11 9 11 9 11 7 11 7 11 7 11 7 16 7 16 7 16 1 16 1 16 1 16 1 8 1 8 1 8 15 8 15 8ZM 5 11C 5 11 3 11 3 11 3 11 3 12.88 3 12.88 3 12.88 5 12.88 5 12.88 5 12.88 5 11 5 11ZM 13 11C 13 11 11 11 11 11 11 11 11 13 11 13 11 13 13 13 13 13 13 13 13 11 13 11Z" fill="rgb(43,43,42)" />
+                    </svg>
+                    <span class="menu-item__title">PLACES PAGE</span>
+                </a>
+                <a href="open_places.html" class="menu-item">
+                    <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M 10.16 15.45C 11.77 11.49 16 0 16 0 16 0 1.37 5.49 0.37 5.89-0.07 6.07-0.1 6.74 0.19 7.03 1.65 8.5 5.73 7.38 7.19 8.85 8.66 10.31 7.49 14.34 8.95 15.8 9.37 16.21 9.97 15.93 10.16 15.45 10.16 15.45 10.16 15.45 10.16 15.45Z" fill="rgb(43,43,42)" />
+                    </svg>
+                    <span class="menu-item__title">PLACE PAGE</span>
+                </a>
+                <a href="users.html" class="menu-item">
+                    <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M 15.12 14C 15.12 14 11.62 14 11.62 14 11.62 14 11.62 11.38 11.62 11.38 11.62 11.38 13.37 8.75 13.37 8.75 13.37 8.75 12.5 7.88 12.5 7.88 12.5 7.88 14.25 7.88 14.25 7.88 15.22 7.88 16 8.66 16 9.62 16 9.62 16 13.13 16 13.13 16 13.61 15.61 14 15.12 14ZM 14.25 6.12C 14.25 6.12 11.62 6.12 11.62 6.12 12.59 6.12 13.37 5.34 13.37 4.37 13.37 4.37 13.37 3.5 13.37 3.5 11.62 3.5 11.62 1.75 11.62 1.75 11.62 1.75 11.62 3.5 9.87 3.5 9.87 3.5 9.87 4.37 9.87 4.37 9.87 5.34 10.66 6.12 11.62 6.12 11.62 6.12 9 6.12 9 6.12 9 6.12 9 2.63 9 2.63 9 1.18 10.17 0 11.62 0 13.07 0 14.25 1.18 14.25 2.63 14.25 2.63 14.25 4.37 14.25 4.37 14.25 4.86 14.64 5.25 15.12 5.25 15.12 5.73 14.73 6.12 14.25 6.12ZM 10.5 11.63C 10.5 11.63 10.5 15.13 10.5 15.13 10.5 15.61 10.11 16 9.63 16 9.63 16 0.88 16 0.88 16 0.39 16-0 15.61-0 15.13-0 15.13-0 11.63-0 11.63-0 10.66 0.78 9.87 1.75 9.87 1.75 9.87 3.5 9.87 3.5 9.87 3.5 9.87 5.25 12.5 5.25 12.5 5.25 12.5 7 9.87 7 9.87 7 9.87 8.75 9.87 8.75 9.87 9.72 9.87 10.5 10.66 10.5 11.63ZM 5.25 9C 3.56 9 2.19 7.43 2.19 5.5 2.19 3.57 3.56 2 5.25 2 6.94 2 8.31 3.57 8.31 5.5 8.31 7.43 6.94 9 5.25 9ZM 5.25 8.13C 5.73 8.13 6.12 7.73 6.12 7.25 6.12 7.25 4.37 7.25 4.37 7.25 4.37 7.73 4.77 8.13 5.25 8.13ZM 6.13 3.94C 5.95 4.26 5.66 4.59 5.28 4.87 4.52 5.41 3.65 5.53 3.2 5.19 3.2 5.19 3.2 5.2 3.2 5.2 3.12 5.43 3.06 5.68 3.06 5.94 3.06 6.37 3.19 6.77 3.41 7.11 3.41 7.11 5.25 6.38 5.25 6.38 5.25 6.38 7.09 7.11 7.09 7.11 7.31 6.77 7.44 6.37 7.44 5.94 7.44 5.04 6.9 4.27 6.13 3.94Z" fill="rgb(43,43,42)" />
+                    </svg>
+                    <span class="menu-item__title">USERS PAGE</span>
+                </a>
+                <a href="user_profile.html" class="menu-item">
+                    <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="16px" viewBox="0 0 12 16">
+                        <path fillRule="evenodd" d="M 11 16C 11 16 1 16 1 16 0.45 16-0 15.55-0 15-0 15-0 11-0 11-0 9.9 0.9 9 2 9 2 9 4 9 4 9 4 9 6 12 6 12 6 12 8 9 8 9 8 9 10 9 10 9 11.11 9 12 9.9 12 11 12 11 12 15 12 15 12 15.55 11.55 16 11 16ZM 6 8C 4.07 8 2.5 6.21 2.5 4 2.5 1.79 4.07 0 6 0 7.93 0 9.5 1.79 9.5 4 9.5 6.21 7.93 8 6 8ZM 6 7C 6.55 7 7 6.55 7 6 7 6 5 6 5 6 5 6.55 5.45 7 6 7ZM 7 2.21C 6.8 2.59 6.47 2.97 6.03 3.28 5.16 3.89 4.17 4.03 3.66 3.65 3.56 3.92 3.5 4.2 3.5 4.5 3.5 5 3.65 5.45 3.9 5.84 3.9 5.84 6 5 6 5 6 5 8.1 5.84 8.1 5.84 8.35 5.45 8.5 5 8.5 4.5 8.5 3.48 7.88 2.6 7 2.21Z" fill="rgb(43,43,42)" />
+                    </svg>
+                    <span class="menu-item__title">USER PROFILE</span>
+                </a>
+                <a data-toggle="modal" data-target="#chat" href="" class="menu-item">
+                    <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M 8 8.34C 8 8.34 16 16 16 16 16 16-0 16-0 16-0 16 8 8.34 8 8.34ZM 8-0C 8-0-0 6-0 6-0 6-0 14.62-0 14.62-0 14.62 5.47 9.38 5.47 9.38 5.47 9.38 1.41 6.19 1.41 6.19 1.41 6.19 8 1.25 8 1.25 8 1.25 14.59 6.19 14.59 6.19 14.59 6.19 10.53 9.38 10.53 9.38 10.53 9.38 16 14.62 16 14.62 16 14.62 16 6 16 6 16 6 8-0 8-0Z" fill="rgb(43,43,42)" />
+                    </svg>
+                    <span class="menu-item__title">CHAT</span>
+                    <span class="menu-item__indicator indicator">12</span>
+                </a>
+                <a href="news.html" class="menu-item">
+                    <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M 3 2C 3 2 3 1 3 1 3 0.45 3.45-0 4-0 4.55-0 5 0.45 5 1 5 1 5 2 5 2 5 2.55 4.55 3 4 3 3.45 3 3 2.55 3 2ZM 10 3C 10.55 3 11 2.55 11 2 11 2 11 1 11 1 11 0.45 10.55-0 10-0 9.45-0 9 0.45 9 1 9 1 9 2 9 2 9 2.55 9.45 3 10 3ZM 14 14C 14 14-0 14-0 14-0 14-0 2-0 2-0 2 2.5 2 2.5 2 2.5 2.83 3.17 3.5 4 3.5 4.83 3.5 5.5 2.83 5.5 2 5.5 2 8.5 2 8.5 2 8.5 2.83 9.17 3.5 10 3.5 10.83 3.5 11.5 2.83 11.5 2 11.5 2 14 2 14 2 14 2 14 14 14 14ZM 13 5C 13 5 1 5 1 5 1 5 1 13 1 13 1 13 13 13 13 13 13 13 13 5 13 5ZM 15 3C 15 3 15 15 15 15 15 15 1 15 1 15 1 15 1 16 1 16 1 16 16 16 16 16 16 16 16 3 16 3 16 3 15 3 15 3ZM 5 6C 5 6 3 6 3 6 3 6 3 8 3 8 3 8 5 8 5 8 5 8 5 6 5 6ZM 8 6C 8 6 6 6 6 6 6 6 6 8 6 8 6 8 8 8 8 8 8 8 8 6 8 6ZM 11 6C 11 6 9 6 9 6 9 6 9 8 9 8 9 8 11 8 11 8 11 8 11 6 11 6ZM 5 9C 5 9 3 9 3 9 3 9 3 11 3 11 3 11 5 11 5 11 5 11 5 9 5 9ZM 8 9C 8 9 6 9 6 9 6 9 6 11 6 11 6 11 8 11 8 11 8 11 8 9 8 9ZM 11 9C 11 9 9 9 9 9 9 9 9 11 9 11 9 11 11 11 11 11 11 11 11 9 11 9Z" fill="rgb(43,43,42)" />
+                    </svg>
+                    <span class="menu-item__title">NEWS</span>
+                </a>
+                <a href="open_news.html" class="menu-item">
+                    <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M 15.17 0.82C 15.91 1.56 16.18 2.65 15.88 3.65 15.88 3.65 14.81 4.71 14.81 4.71 14.81 4.71 11.28 1.17 11.28 1.17 11.28 1.17 12.34 0.11 12.34 0.11 13.34-0.19 14.43 0.08 15.17 0.82ZM 14.11 5.42C 14.11 5.42 6.33 13.2 6.33 13.2 6.33 13.2-0 16-0 16-0 16 2.79 9.66 2.79 9.66 2.79 9.66 10.57 1.88 10.57 1.88 10.57 1.88 14.11 5.42 14.11 5.42ZM 4.59 12.88C 4.59 12.88 3.12 11.4 3.12 11.4 3.12 11.4 1.96 14.04 1.96 14.04 1.96 14.04 4.59 12.88 4.59 12.88 4.59 12.88 4.59 12.88 4.59 12.88ZM 16 15C 16 15 6.97 15 6.97 15 6.97 15 6.97 16 6.97 16 6.97 16 16 16 16 16 16 16 16 15 16 15Z" fill="rgb(43,43,42)" />
+                    </svg>
+                    <span class="menu-item__title">OPEN POST</span>
+                </a>
+<!--<a href="" class="menu-item">
+                    <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="18px" viewBox="0 0 16 18">
+                        <path fillRule="evenodd" d="M 2.29 1.69C 2.29 1.69 2.29 0.56 2.29 0.56 2.29 0.25 2.54-0 2.86-0 3.17-0 3.43 0.25 3.43 0.56 3.43 0.56 3.43 1.69 3.43 1.69 3.43 2 3.17 2.25 2.86 2.25 2.54 2.25 2.29 2 2.29 1.69ZM 16 2.18C 16 2.18 16 16.95 16 16.95 16 17.53 15.49 18 14.86 18 14.86 18 1.14 18 1.14 18 0.51 18 0 17.53 0 16.95 0 16.95 0 2.18 0 2.18 0 1.6 0.51 1.12 1.14 1.12 1.14 1.12 1.72 1.12 1.72 1.12 1.72 1.12 1.72 1.69 1.72 1.69 1.72 2.31 2.23 2.81 2.86 2.81 3.49 2.81 4 2.31 4 1.69 4 1.69 4 1.12 4 1.12 4 1.12 12 1.12 12 1.12 12 1.12 12 1.69 12 1.69 12 2.31 12.51 2.81 13.14 2.81 13.77 2.81 14.28 2.31 14.28 1.69 14.28 1.69 14.28 1.12 14.28 1.12 14.28 1.12 14.86 1.12 14.86 1.12 15.49 1.12 16 1.6 16 2.18ZM 14.86 4.5C 14.86 4.5 1.14 4.5 1.14 4.5 1.14 4.5 1.14 16.87 1.14 16.87 1.14 16.87 14.86 16.88 14.86 16.88 14.86 16.88 14.86 4.5 14.86 4.5ZM 13.14 2.25C 13.46 2.25 13.71 2 13.71 1.69 13.71 1.69 13.71 0.56 13.71 0.56 13.71 0.25 13.46-0 13.14-0 12.83-0 12.57 0.25 12.57 0.56 12.57 0.56 12.57 1.69 12.57 1.69 12.57 2 12.83 2.25 13.14 2.25ZM 2.86 7.87C 2.86 7.87 13.14 7.87 13.14 7.87 13.46 7.87 13.71 7.62 13.71 7.31 13.71 7 13.46 6.75 13.14 6.75 13.14 6.75 2.86 6.75 2.86 6.75 2.54 6.75 2.29 7 2.29 7.31 2.29 7.62 2.54 7.87 2.86 7.87ZM 2.86 11.25C 2.86 11.25 13.14 11.25 13.14 11.25 13.46 11.25 13.71 11 13.71 10.69 13.71 10.38 13.46 10.13 13.14 10.13 13.14 10.13 2.86 10.13 2.86 10.13 2.54 10.13 2.29 10.38 2.29 10.69 2.29 11 2.54 11.25 2.86 11.25ZM 2.86 14.63C 2.86 14.63 13.14 14.63 13.14 14.63 13.46 14.63 13.71 14.37 13.71 14.06 13.71 13.75 13.46 13.5 13.14 13.5 13.14 13.5 2.86 13.5 2.86 13.5 2.54 13.5 2.29 13.75 2.29 14.06 2.29 14.37 2.54 14.63 2.86 14.63Z" fill="rgb(43,43,42)" />
+                    </svg>
+                    <span class="menu-item__title">TYPOGRAPHY</span>
+                </a>-->
+                <a href="vacancy.html" class="menu-item">
+                    <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M 13.83 4.69C 13.83 4.69 13.83 4.69 13.83 4.69 13.94 4.47 14 4.24 14 4 14 4 14 3 14 3 14 1.34 11.31-0 8-0 4.69-0 2 1.34 2 3 2 2.92 2.01 2.84 2.02 2.76 0.78 3.31-0 4.11-0 5-0 5-0 6-0 6-0 6.93 0.84 7.76 2.17 8.31 2.17 8.31 2.17 8.31 2.17 8.31 2.06 8.53 2 8.76 2 9 2 9 2 10 2 10 2 10.35 2.13 10.69 2.35 11 2.13 11.31 2 11.65 2 12 2 12 2 13 2 13 2 14.66 4.69 16 8 16 11.31 16 14 14.66 14 13 14 13 14 12 14 12 14 11.64 13.87 11.3 13.64 10.99 13.64 10.99 13.64 10.99 13.63 10.99 13.8 10.75 13.93 10.51 13.98 10.24 15.22 9.69 16 8.89 16 8 16 8 16 7 16 7 16 6.07 15.16 5.24 13.83 4.69 13.83 4.69 13.83 4.69 13.83 4.69ZM 8 0.5C 11.24 0.5 13.5 1.82 13.5 3 13.5 4.18 11.24 5.5 8 5.5 4.76 5.5 2.5 4.18 2.5 3 2.5 1.82 4.76 0.5 8 0.5ZM 0.5 5C 0.5 4.42 1.05 3.8 2 3.33 2 3.33 2 4 2 4 2 5.66 4.69 7 8 7 8.49 7 8.97 6.97 9.43 6.91 8.52 7.26 7.35 7.5 6 7.5 2.76 7.5 0.5 6.18 0.5 5ZM 13.5 12C 13.5 13.18 11.24 14.5 8 14.5 4.76 14.5 2.5 13.18 2.5 12 2.5 11.8 2.58 11.61 2.7 11.41 2.7 11.41 2.7 11.4 2.7 11.4 3.7 12.35 5.7 13 8 13 10.3 13 12.29 12.35 13.29 11.4 13.29 11.4 13.29 11.4 13.29 11.4 13.41 11.6 13.5 11.8 13.5 12 13.5 12 13.5 12 13.5 12ZM 11.44 10.91C 10.52 11.26 9.35 11.5 8 11.5 4.76 11.5 2.5 10.18 2.5 9 2.5 8.83 2.56 8.66 2.65 8.49 3.14 8.65 3.68 8.78 4.26 8.87 5 10.1 7.29 11 10 11 10.5 11 10.98 10.97 11.44 10.91 11.44 10.91 11.44 10.91 11.44 10.91 11.44 10.91 11.44 10.91 11.44 10.91ZM 10 9.5C 8.72 9.5 7.6 9.29 6.7 8.97 9.52 8.8 11.75 7.67 11.98 6.24 12.66 5.94 13.2 5.56 13.55 5.14 13.55 5.14 13.55 5.14 13.55 5.14 14.76 5.63 15.5 6.33 15.5 7 15.5 8.18 13.24 9.5 10 9.5 10 9.5 10 9.5 10 9.5ZM 9.07 3.73C 9.07 3.62 8.98 3.54 8.82 3.49 8.65 3.43 8.27 3.36 7.7 3.28 7.17 3.21 6.77 3.13 6.47 3.06 6.18 2.99 5.94 2.89 5.76 2.76 5.58 2.63 5.49 2.47 5.49 2.3 5.49 2.07 5.65 1.87 5.98 1.69 6.3 1.51 6.82 1.4 7.52 1.36 7.52 1.36 7.52 1 7.52 1 7.52 1 8.47 1 8.47 1 8.47 1 8.47 1.36 8.47 1.36 9.52 1.41 10.21 1.65 10.52 2.09 10.52 2.09 9.22 2.31 9.22 2.31 8.96 2.01 8.57 1.86 8.04 1.86 7.77 1.86 7.55 1.89 7.39 1.96 7.23 2.03 7.15 2.11 7.15 2.21 7.15 2.3 7.23 2.38 7.38 2.43 7.54 2.48 7.87 2.55 8.39 2.62 8.95 2.71 9.39 2.79 9.71 2.86 10.03 2.94 10.28 3.04 10.48 3.17 10.67 3.3 10.76 3.46 10.76 3.63 10.76 3.91 10.56 4.13 10.17 4.31 9.78 4.49 9.21 4.6 8.47 4.63 8.47 4.63 8.47 5.09 8.47 5.09 8.47 5.09 7.52 5.09 7.52 5.09 7.52 5.09 7.52 4.63 7.52 4.63 6.28 4.58 5.51 4.28 5.22 3.75 5.22 3.75 6.68 3.59 6.68 3.59 6.82 3.93 7.27 4.1 8.03 4.1 8.38 4.1 8.65 4.06 8.82 3.99 8.98 3.92 9.07 3.83 9.07 3.73 9.07 3.73 9.07 3.73 9.07 3.73Z" fill="rgb(43,43,42)" />
+                    </svg>
+                    <span class="menu-item__title">VACANCY</span>
+                </a>
+            </nav>
+            <!-- /menu -->
+        </div>
+        <!-- /sidebar -->
+        <a href="http://matveyan.ru" target="_blank" class="copyright">
+            <img src="img/icons/copyright.png" alt="">
+        </a>
+    </main>
+    <!-- modals  -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog">
+        <div class="container full-height">
+            <div class="row full-height">
+                <div class="col-lg-offset-4 col-lg-4 full-height">
+                    <div class="modal-dialog-wrapper full-height">
+                        <div class="modal-dialog">
+                            <!-- login -->
+                            <div class="login">
+                                <div class="login-heading">
+                                    <div class="login-heading-wrapper">
+                                        <img src="img/icons/person-shape.svg" alt="" class="login-heading__icon">
+                                        <p class="login-heading__title">Join us!</p>
+                                        <p class="login-heading__subtitle">The discoveries are waiting for you!</p>
+                                    </div>
+                                </div>
+                                <form action="#" class="login-form">
+                                    <input class="login-form__input input input--blue" type="text" placeholder="Your login">
+                                    <input class="login-form__input input input--blue" type="password" placeholder="Password">
+                                    <div class="login-form__links">
+                                        <a class="btn btn--blue">Sign in</a>
+                                        <a href="">Registration</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- /login -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="chat" tabindex="-1" role="dialog">
+        <div class="container full-height">
+            <div class="row full-height">
+                <div class="col-lg-offset-1 col-lg-10 full-height">
+                    <div class="modal-dialog-wrapper full-height">
+                        <div class="modal-dialog">
+                            <!-- chat -->
+                            <div class="chat">
+                                <button class="close-modal visible-xs visible-sm" data-dismiss="modal"><span class="fa fa-times"></span></button>
+                                <div class="chat__header">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <header>
+                                                <p><b>Messages</b></p>
+                                            </header>
+                                            <!-- /.chat__header -->
+                                        </div>
+                                        <div class="col-sm-9 hidden-xs">
+                                            <header>
+                                                <p class="chat-title">Elena An</p>
+                                            </header>
+                                            <!-- /.chat__header -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="chat-contacts">
+                                            <div class="chat-contact" data-add-active-individual=".chat-contact, .chat-window" data-add-active="[data-chat-contact='1'], [data-chat-window='1']" data-chat-contact="1">
+                                                <img src="img/users/2--thumb.jpg" alt="" class="chat-contact__img" />
+                                                <div class="chat-contact__messages-count">
+                                                    <span class="fa fa-comments-o"></span>135
+                                                </div>
+                                                <div class="chat-contact-wrap">
+                                                    <a href="#" class="chat-contact__name"><span>JOHN GALT</span></a>
+                                                    <p>Last visit 16:33</p>
+                                                </div>
+                                            </div>
+                                            <div class="chat-contact active" data-add-active-individual=".chat-contact, .chat-window" data-add-active="[data-chat-contact='2'], [data-chat-window='2']" data-chat-contact="2">
+                                                <img src="img/users/3--thumb.jpg" alt="" class="chat-contact__img" />
+                                                <div class="chat-contact__messages-count">
+                                                    <span class="fa fa-comments-o"></span>135
+                                                </div>
+                                                <div class="chat-contact-wrap">
+                                                    <a href="#" class="chat-contact__name chat-contact__name--online"><span>Elena An</span></a>
+                                                    <p>Last visit 16:33</p>
+                                                </div>
+                                            </div>
+                                            <div class="chat-contact" data-add-active-individual=".chat-contact, .chat-window" data-add-active="[data-chat-contact='3'], [data-chat-window='3']" data-chat-contact="3">
+                                                <img src="img/users/4--thumb.jpg" alt="" class="chat-contact__img" />
+                                                <div class="chat-contact__messages-count chat-contact__messages-count--unread">
+                                                    <span class="fa fa-comments-o"></span>135
+                                                </div>
+                                                <div class="chat-contact-wrap">
+                                                    <a href="#" class="chat-contact__name"><span>JOHN GALT</span></a>
+                                                    <p>Last visit 16:33</p>
+                                                </div>
+                                            </div>
+                                            <div class="chat-contact" data-add-active-individual=".chat-contact, .chat-window" data-add-active="[data-chat-contact='4'], [data-chat-window='4']" data-chat-contact="4">
+                                                <img src="img/users/5--thumb.jpg" alt="" class="chat-contact__img" />
+                                                <div class="chat-contact__messages-count">
+                                                    <span class="fa fa-comments-o"></span>135
+                                                </div>
+                                                <div class="chat-contact-wrap">
+                                                    <a href="#" class="chat-contact__name"><span>JOHN GALT</span></a>
+                                                    <p>Last visit 16:33</p>
+                                                </div>
+                                            </div>
+                                            <div class="chat-contact" data-add-active-individual=".chat-contact, .chat-window" data-add-active="[data-chat-contact='5'], [data-chat-window='5']" data-chat-contact="5">
+                                                <img src="img/users/6--thumb.jpg" alt="" class="chat-contact__img" />
+                                                <div class="chat-contact__messages-count">
+                                                    <span class="fa fa-comments-o"></span>135
+                                                </div>
+                                                <div class="chat-contact-wrap">
+                                                    <a href="#" class="chat-contact__name"><span>JOHN GALT</span></a>
+                                                    <p>Last visit 16:33</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="chat-windows">
+                                            <div class="chat-window" data-chat-window="1">
+                                                <div class="chat-messages clearfix">
+                                                    <div class="chat-message chat-message--outcoming">
+                                                        <img src="img/users/7--thumb.jpg" alt="" class="chat-message__avatar" />
+                                                        <div class="chat-message__text">
+                                                            Get a history lesson on possibly the world's most famous beverage -- and sample Coca-Cola products from around the globe! Kids will love it...Get a history lesson on possibly the world's most famous beverage
+                                                            <div class="chat-message__time">
+                                                                2 min late
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat-message chat-message--incoming">
+                                                        <img src="img/users/3--thumb.jpg" alt="" class="chat-message__avatar" />
+                                                        <div class="chat-message__text">
+                                                            Hello man!
+                                                            <div class="chat-message__time">
+                                                                2 min late
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-input clearfix">
+                                                    <button class="visible-lg chat-input__submit btn btn--blue"><span class="fa fa-paper-plane"></span></button>
+                                                    <div class="chat-input-textarea-wrapper">
+                                                        <textarea placeholder="Enter message" class="chat-input__textarea"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="chat-window" data-chat-window="2">
+                                                <div class="chat-messages clearfix">
+                                                    <div class="chat-message chat-message--outcoming">
+                                                        <img src="img/users/7--thumb.jpg" alt="" class="chat-message__avatar" />
+                                                        <div class="chat-message__text">
+                                                            Get a history lesson on possibly the world's most famous beverage -- and sample Coca-Cola products from around the globe! Kids will love it...Get a history lesson on possibly the world's most famous beverage
+                                                            <div class="chat-message__time">
+                                                                2 min late
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat-message chat-message--incoming">
+                                                        <img src="img/users/3--thumb.jpg" alt="" class="chat-message__avatar" />
+                                                        <div class="chat-message__text">
+                                                            Hello man!
+                                                            <div class="chat-message__time">
+                                                                2 min late
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-input clearfix">
+                                                    <button class="visible-lg chat-input__submit btn btn--blue"><span class="fa fa-paper-plane"></span></button>
+                                                    <div class="chat-input-textarea-wrapper">
+                                                        <textarea placeholder="Enter message" class="chat-input__textarea"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="chat-window active" data-chat-window="3">
+                                                <div class="chat-messages clearfix">
+                                                    <div class="chat-message chat-message--outcoming">
+                                                        <img src="img/users/7--thumb.jpg" alt="" class="chat-message__avatar" />
+                                                        <div class="chat-message__text">
+                                                            Get a history lesson on possibly the world's most famous beverage -- and sample Coca-Cola products from around the globe! Kids will love it...Get a history lesson on possibly the world's most famous beverage
+                                                            <div class="chat-message__time">
+                                                                2 min late
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat-message chat-message--incoming">
+                                                        <img src="img/users/3--thumb.jpg" alt="" class="chat-message__avatar" />
+                                                        <div class="chat-message__text">
+                                                            Hello man!
+                                                            <div class="chat-message__time">
+                                                                2 min late
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-input clearfix">
+                                                    <button class="visible-lg chat-input__submit btn btn--blue"><span class="fa fa-paper-plane"></span></button>
+                                                    <div class="chat-input-textarea-wrapper">
+                                                        <textarea placeholder="Enter message" class="chat-input__textarea"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="chat-window" data-chat-window="4">
+                                                <div class="chat-messages clearfix">
+                                                    <div class="chat-message chat-message--outcoming">
+                                                        <img src="img/users/7--thumb.jpg" alt="" class="chat-message__avatar" />
+                                                        <div class="chat-message__text">
+                                                            Get a history lesson on possibly the world's most famous beverage -- and sample Coca-Cola products from around the globe! Kids will love it...Get a history lesson on possibly the world's most famous beverage
+                                                            <div class="chat-message__time">
+                                                                2 min late
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat-message chat-message--incoming">
+                                                        <img src="img/users/3--thumb.jpg" alt="" class="chat-message__avatar" />
+                                                        <div class="chat-message__text">
+                                                            Hello man!
+                                                            <div class="chat-message__time">
+                                                                2 min late
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-input clearfix">
+                                                    <button class="visible-lg chat-input__submit btn btn--blue"><span class="fa fa-paper-plane"></span></button>
+                                                    <div class="chat-input-textarea-wrapper">
+                                                        <textarea placeholder="Enter message" class="chat-input__textarea"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="chat-window" data-chat-window="5">
+                                                <div class="chat-messages clearfix">
+                                                    <div class="chat-message chat-message--outcoming">
+                                                        <img src="img/users/7--thumb.jpg" alt="" class="chat-message__avatar" />
+                                                        <div class="chat-message__text">
+                                                            Get a history lesson on possibly the world's most famous beverage -- and sample Coca-Cola products from around the globe! Kids will love it...Get a history lesson on possibly the world's most famous beverage
+                                                            <div class="chat-message__time">
+                                                                2 min late
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="chat-message chat-message--incoming">
+                                                        <img src="img/users/3--thumb.jpg" alt="" class="chat-message__avatar" />
+                                                        <div class="chat-message__text">
+                                                            Hello man!
+                                                            <div class="chat-message__time">
+                                                                2 min late
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="chat-input clearfix">
+                                                    <button class="visible-lg chat-input__submit btn btn--blue"><span class="fa fa-paper-plane"></span></button>
+                                                    <div class="chat-input-textarea-wrapper">
+                                                        <textarea placeholder="Enter message" class="chat-input__textarea"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /chat -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /modals -->
+    <!-- mobile menu -->
+    <nav class="mobile-menu">
+        <div class="mobile-menu-wrapper">
+            <a href="index.html" class="menu-item menu-item--mobile">
+                <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="14px" viewBox="0 0 16 14">
+                    <path fillRule="evenodd" d="M-0 0C-0 0 5 3 5 3 5 3 5 14 5 14 5 14-0 11-0 11-0 11-0 0-0 0ZM 11 11C 11 11 16 14 16 14 16 14 16 3 16 3 16 3 11 0 11 0 11 0 11 11 11 11ZM 6 14C 6 14 10 11 10 11 10 11 10 0 10 0 10 0 6 3 6 3 6 3 6 14 6 14Z" fill="rgb(43,43,42)" />
+                </svg>
+                <span class="menu-item__title">WORLD</span>
+            </a>
+            <a href="city.html" class="menu-item menu-item--mobile">
+                <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="16px" viewBox="0 0 15 16">
+                    <path fillRule="evenodd" d="M 15 4.5C 12.94 5.26 11.38 5.8 10 7.5 8.77 9.02 7 9.55 5 8.54 5 8.54 5 14 5 14 5 14 4 14 4 14 4 14 4 0.5 4 0.5 4 0.22 4.22 0 4.5 0 4.78 0 5 0.22 5 0.5 6.11 2.11 8.04 2.47 10 2.5 13 2.54 15 4.5 15 4.5ZM 6 11.13C 6 11.13 6 12.15 6 12.15 7.18 12.39 8 12.9 8 13.5 8 14.33 6.43 15 4.5 15 2.57 15 1 14.33 1 13.5 1 12.9 1.82 12.39 3 12.15 3 12.15 3 11.13 3 11.13 1.18 11.45-0 12.33-0 13.5-0 14.97 1.85 16 4.5 16 7.15 16 9 14.97 9 13.5 9 12.33 7.82 11.45 6 11.13Z" fill="rgb(43,43,42)" />
+                </svg>
+                <span class="menu-item__title">CITY PAGE</span>
+            </a>
+            <a href="places.html" class="menu-item menu-item--mobile">
+                <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M-0 7C-0 7 3 2 3 2 3 2 13 2 13 2 13 2 16 7 16 7 16 7-0 7-0 7ZM 9-0C 9-0 7-0 7-0 7-0 7 1 7 1 7 1 9 1 9 1 9 1 9-0 9-0ZM 15 8C 15 8 15 16 15 16 15 16 9 16 9 16 9 16 9 11 9 11 9 11 7 11 7 11 7 11 7 16 7 16 7 16 1 16 1 16 1 16 1 8 1 8 1 8 15 8 15 8ZM 5 11C 5 11 3 11 3 11 3 11 3 12.88 3 12.88 3 12.88 5 12.88 5 12.88 5 12.88 5 11 5 11ZM 13 11C 13 11 11 11 11 11 11 11 11 13 11 13 11 13 13 13 13 13 13 13 13 11 13 11Z" fill="rgb(43,43,42)" />
+                </svg>
+                <span class="menu-item__title">PLACES PAGE</span>
+            </a>
+            <a href="open_places.html" class="menu-item menu-item--mobile">
+                <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M 10.16 15.45C 11.77 11.49 16 0 16 0 16 0 1.37 5.49 0.37 5.89-0.07 6.07-0.1 6.74 0.19 7.03 1.65 8.5 5.73 7.38 7.19 8.85 8.66 10.31 7.49 14.34 8.95 15.8 9.37 16.21 9.97 15.93 10.16 15.45 10.16 15.45 10.16 15.45 10.16 15.45Z" fill="rgb(43,43,42)" />
+                </svg>
+                <span class="menu-item__title">PLACE PAGE</span>
+            </a>
+            <a href="users.html" class="menu-item menu-item--mobile">
+                <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M 15.12 14C 15.12 14 11.62 14 11.62 14 11.62 14 11.62 11.38 11.62 11.38 11.62 11.38 13.37 8.75 13.37 8.75 13.37 8.75 12.5 7.88 12.5 7.88 12.5 7.88 14.25 7.88 14.25 7.88 15.22 7.88 16 8.66 16 9.62 16 9.62 16 13.13 16 13.13 16 13.61 15.61 14 15.12 14ZM 14.25 6.12C 14.25 6.12 11.62 6.12 11.62 6.12 12.59 6.12 13.37 5.34 13.37 4.37 13.37 4.37 13.37 3.5 13.37 3.5 11.62 3.5 11.62 1.75 11.62 1.75 11.62 1.75 11.62 3.5 9.87 3.5 9.87 3.5 9.87 4.37 9.87 4.37 9.87 5.34 10.66 6.12 11.62 6.12 11.62 6.12 9 6.12 9 6.12 9 6.12 9 2.63 9 2.63 9 1.18 10.17 0 11.62 0 13.07 0 14.25 1.18 14.25 2.63 14.25 2.63 14.25 4.37 14.25 4.37 14.25 4.86 14.64 5.25 15.12 5.25 15.12 5.73 14.73 6.12 14.25 6.12ZM 10.5 11.63C 10.5 11.63 10.5 15.13 10.5 15.13 10.5 15.61 10.11 16 9.63 16 9.63 16 0.88 16 0.88 16 0.39 16-0 15.61-0 15.13-0 15.13-0 11.63-0 11.63-0 10.66 0.78 9.87 1.75 9.87 1.75 9.87 3.5 9.87 3.5 9.87 3.5 9.87 5.25 12.5 5.25 12.5 5.25 12.5 7 9.87 7 9.87 7 9.87 8.75 9.87 8.75 9.87 9.72 9.87 10.5 10.66 10.5 11.63ZM 5.25 9C 3.56 9 2.19 7.43 2.19 5.5 2.19 3.57 3.56 2 5.25 2 6.94 2 8.31 3.57 8.31 5.5 8.31 7.43 6.94 9 5.25 9ZM 5.25 8.13C 5.73 8.13 6.12 7.73 6.12 7.25 6.12 7.25 4.37 7.25 4.37 7.25 4.37 7.73 4.77 8.13 5.25 8.13ZM 6.13 3.94C 5.95 4.26 5.66 4.59 5.28 4.87 4.52 5.41 3.65 5.53 3.2 5.19 3.2 5.19 3.2 5.2 3.2 5.2 3.12 5.43 3.06 5.68 3.06 5.94 3.06 6.37 3.19 6.77 3.41 7.11 3.41 7.11 5.25 6.38 5.25 6.38 5.25 6.38 7.09 7.11 7.09 7.11 7.31 6.77 7.44 6.37 7.44 5.94 7.44 5.04 6.9 4.27 6.13 3.94Z" fill="rgb(43,43,42)" />
+                </svg>
+                <span class="menu-item__title">USERS PAGE</span>
+            </a>
+            <a href="user_profile.html" class="menu-item menu-item--mobile">
+                <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="16px" viewBox="0 0 12 16">
+                    <path fillRule="evenodd" d="M 11 16C 11 16 1 16 1 16 0.45 16-0 15.55-0 15-0 15-0 11-0 11-0 9.9 0.9 9 2 9 2 9 4 9 4 9 4 9 6 12 6 12 6 12 8 9 8 9 8 9 10 9 10 9 11.11 9 12 9.9 12 11 12 11 12 15 12 15 12 15.55 11.55 16 11 16ZM 6 8C 4.07 8 2.5 6.21 2.5 4 2.5 1.79 4.07 0 6 0 7.93 0 9.5 1.79 9.5 4 9.5 6.21 7.93 8 6 8ZM 6 7C 6.55 7 7 6.55 7 6 7 6 5 6 5 6 5 6.55 5.45 7 6 7ZM 7 2.21C 6.8 2.59 6.47 2.97 6.03 3.28 5.16 3.89 4.17 4.03 3.66 3.65 3.56 3.92 3.5 4.2 3.5 4.5 3.5 5 3.65 5.45 3.9 5.84 3.9 5.84 6 5 6 5 6 5 8.1 5.84 8.1 5.84 8.35 5.45 8.5 5 8.5 4.5 8.5 3.48 7.88 2.6 7 2.21Z" fill="rgb(43,43,42)" />
+                </svg>
+                <span class="menu-item__title">USER PROFILE</span>
+            </a>
+            <a data-toggle="modal" data-target="#chat" href="" class="menu-item menu-item--mobile">
+                <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M 8 8.34C 8 8.34 16 16 16 16 16 16-0 16-0 16-0 16 8 8.34 8 8.34ZM 8-0C 8-0-0 6-0 6-0 6-0 14.62-0 14.62-0 14.62 5.47 9.38 5.47 9.38 5.47 9.38 1.41 6.19 1.41 6.19 1.41 6.19 8 1.25 8 1.25 8 1.25 14.59 6.19 14.59 6.19 14.59 6.19 10.53 9.38 10.53 9.38 10.53 9.38 16 14.62 16 14.62 16 14.62 16 6 16 6 16 6 8-0 8-0Z" fill="rgb(43,43,42)" />
+                </svg>
+                <span class="menu-item__title">CHAT</span>
+                <span class="menu-item__indicator indicator">12</span>
+            </a>
+            <a href="news.html" class="menu-item menu-item--mobile">
+                <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M 3 2C 3 2 3 1 3 1 3 0.45 3.45-0 4-0 4.55-0 5 0.45 5 1 5 1 5 2 5 2 5 2.55 4.55 3 4 3 3.45 3 3 2.55 3 2ZM 10 3C 10.55 3 11 2.55 11 2 11 2 11 1 11 1 11 0.45 10.55-0 10-0 9.45-0 9 0.45 9 1 9 1 9 2 9 2 9 2.55 9.45 3 10 3ZM 14 14C 14 14-0 14-0 14-0 14-0 2-0 2-0 2 2.5 2 2.5 2 2.5 2.83 3.17 3.5 4 3.5 4.83 3.5 5.5 2.83 5.5 2 5.5 2 8.5 2 8.5 2 8.5 2.83 9.17 3.5 10 3.5 10.83 3.5 11.5 2.83 11.5 2 11.5 2 14 2 14 2 14 2 14 14 14 14ZM 13 5C 13 5 1 5 1 5 1 5 1 13 1 13 1 13 13 13 13 13 13 13 13 5 13 5ZM 15 3C 15 3 15 15 15 15 15 15 1 15 1 15 1 15 1 16 1 16 1 16 16 16 16 16 16 16 16 3 16 3 16 3 15 3 15 3ZM 5 6C 5 6 3 6 3 6 3 6 3 8 3 8 3 8 5 8 5 8 5 8 5 6 5 6ZM 8 6C 8 6 6 6 6 6 6 6 6 8 6 8 6 8 8 8 8 8 8 8 8 6 8 6ZM 11 6C 11 6 9 6 9 6 9 6 9 8 9 8 9 8 11 8 11 8 11 8 11 6 11 6ZM 5 9C 5 9 3 9 3 9 3 9 3 11 3 11 3 11 5 11 5 11 5 11 5 9 5 9ZM 8 9C 8 9 6 9 6 9 6 9 6 11 6 11 6 11 8 11 8 11 8 11 8 9 8 9ZM 11 9C 11 9 9 9 9 9 9 9 9 11 9 11 9 11 11 11 11 11 11 11 11 9 11 9Z" fill="rgb(43,43,42)" />
+                </svg>
+                <span class="menu-item__title">NEWS</span>
+            </a>
+            <a href="open_news.html" class="menu-item menu-item--mobile">
+                <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M 15.17 0.82C 15.91 1.56 16.18 2.65 15.88 3.65 15.88 3.65 14.81 4.71 14.81 4.71 14.81 4.71 11.28 1.17 11.28 1.17 11.28 1.17 12.34 0.11 12.34 0.11 13.34-0.19 14.43 0.08 15.17 0.82ZM 14.11 5.42C 14.11 5.42 6.33 13.2 6.33 13.2 6.33 13.2-0 16-0 16-0 16 2.79 9.66 2.79 9.66 2.79 9.66 10.57 1.88 10.57 1.88 10.57 1.88 14.11 5.42 14.11 5.42ZM 4.59 12.88C 4.59 12.88 3.12 11.4 3.12 11.4 3.12 11.4 1.96 14.04 1.96 14.04 1.96 14.04 4.59 12.88 4.59 12.88 4.59 12.88 4.59 12.88 4.59 12.88ZM 16 15C 16 15 6.97 15 6.97 15 6.97 15 6.97 16 6.97 16 6.97 16 16 16 16 16 16 16 16 15 16 15Z" fill="rgb(43,43,42)" />
+                </svg>
+                <span class="menu-item__title">OPEN POST</span>
+            </a>
+<!--<a href="" class="menu-item menu-item--mobile">
+                <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="18px" viewBox="0 0 16 18">
+                    <path fillRule="evenodd" d="M 2.29 1.69C 2.29 1.69 2.29 0.56 2.29 0.56 2.29 0.25 2.54-0 2.86-0 3.17-0 3.43 0.25 3.43 0.56 3.43 0.56 3.43 1.69 3.43 1.69 3.43 2 3.17 2.25 2.86 2.25 2.54 2.25 2.29 2 2.29 1.69ZM 16 2.18C 16 2.18 16 16.95 16 16.95 16 17.53 15.49 18 14.86 18 14.86 18 1.14 18 1.14 18 0.51 18 0 17.53 0 16.95 0 16.95 0 2.18 0 2.18 0 1.6 0.51 1.12 1.14 1.12 1.14 1.12 1.72 1.12 1.72 1.12 1.72 1.12 1.72 1.69 1.72 1.69 1.72 2.31 2.23 2.81 2.86 2.81 3.49 2.81 4 2.31 4 1.69 4 1.69 4 1.12 4 1.12 4 1.12 12 1.12 12 1.12 12 1.12 12 1.69 12 1.69 12 2.31 12.51 2.81 13.14 2.81 13.77 2.81 14.28 2.31 14.28 1.69 14.28 1.69 14.28 1.12 14.28 1.12 14.28 1.12 14.86 1.12 14.86 1.12 15.49 1.12 16 1.6 16 2.18ZM 14.86 4.5C 14.86 4.5 1.14 4.5 1.14 4.5 1.14 4.5 1.14 16.87 1.14 16.87 1.14 16.87 14.86 16.88 14.86 16.88 14.86 16.88 14.86 4.5 14.86 4.5ZM 13.14 2.25C 13.46 2.25 13.71 2 13.71 1.69 13.71 1.69 13.71 0.56 13.71 0.56 13.71 0.25 13.46-0 13.14-0 12.83-0 12.57 0.25 12.57 0.56 12.57 0.56 12.57 1.69 12.57 1.69 12.57 2 12.83 2.25 13.14 2.25ZM 2.86 7.87C 2.86 7.87 13.14 7.87 13.14 7.87 13.46 7.87 13.71 7.62 13.71 7.31 13.71 7 13.46 6.75 13.14 6.75 13.14 6.75 2.86 6.75 2.86 6.75 2.54 6.75 2.29 7 2.29 7.31 2.29 7.62 2.54 7.87 2.86 7.87ZM 2.86 11.25C 2.86 11.25 13.14 11.25 13.14 11.25 13.46 11.25 13.71 11 13.71 10.69 13.71 10.38 13.46 10.13 13.14 10.13 13.14 10.13 2.86 10.13 2.86 10.13 2.54 10.13 2.29 10.38 2.29 10.69 2.29 11 2.54 11.25 2.86 11.25ZM 2.86 14.63C 2.86 14.63 13.14 14.63 13.14 14.63 13.46 14.63 13.71 14.37 13.71 14.06 13.71 13.75 13.46 13.5 13.14 13.5 13.14 13.5 2.86 13.5 2.86 13.5 2.54 13.5 2.29 13.75 2.29 14.06 2.29 14.37 2.54 14.63 2.86 14.63Z" fill="rgb(43,43,42)" />
+                </svg>
+                <span class="menu-item__title">TYPOGRAPHY</span>
+            </a>-->
+            <a href="vacancy.html" class="menu-item menu-item--mobile">
+                <svg class="menu-item__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M 13.83 4.69C 13.83 4.69 13.83 4.69 13.83 4.69 13.94 4.47 14 4.24 14 4 14 4 14 3 14 3 14 1.34 11.31-0 8-0 4.69-0 2 1.34 2 3 2 2.92 2.01 2.84 2.02 2.76 0.78 3.31-0 4.11-0 5-0 5-0 6-0 6-0 6.93 0.84 7.76 2.17 8.31 2.17 8.31 2.17 8.31 2.17 8.31 2.06 8.53 2 8.76 2 9 2 9 2 10 2 10 2 10.35 2.13 10.69 2.35 11 2.13 11.31 2 11.65 2 12 2 12 2 13 2 13 2 14.66 4.69 16 8 16 11.31 16 14 14.66 14 13 14 13 14 12 14 12 14 11.64 13.87 11.3 13.64 10.99 13.64 10.99 13.64 10.99 13.63 10.99 13.8 10.75 13.93 10.51 13.98 10.24 15.22 9.69 16 8.89 16 8 16 8 16 7 16 7 16 6.07 15.16 5.24 13.83 4.69 13.83 4.69 13.83 4.69 13.83 4.69ZM 8 0.5C 11.24 0.5 13.5 1.82 13.5 3 13.5 4.18 11.24 5.5 8 5.5 4.76 5.5 2.5 4.18 2.5 3 2.5 1.82 4.76 0.5 8 0.5ZM 0.5 5C 0.5 4.42 1.05 3.8 2 3.33 2 3.33 2 4 2 4 2 5.66 4.69 7 8 7 8.49 7 8.97 6.97 9.43 6.91 8.52 7.26 7.35 7.5 6 7.5 2.76 7.5 0.5 6.18 0.5 5ZM 13.5 12C 13.5 13.18 11.24 14.5 8 14.5 4.76 14.5 2.5 13.18 2.5 12 2.5 11.8 2.58 11.61 2.7 11.41 2.7 11.41 2.7 11.4 2.7 11.4 3.7 12.35 5.7 13 8 13 10.3 13 12.29 12.35 13.29 11.4 13.29 11.4 13.29 11.4 13.29 11.4 13.41 11.6 13.5 11.8 13.5 12 13.5 12 13.5 12 13.5 12ZM 11.44 10.91C 10.52 11.26 9.35 11.5 8 11.5 4.76 11.5 2.5 10.18 2.5 9 2.5 8.83 2.56 8.66 2.65 8.49 3.14 8.65 3.68 8.78 4.26 8.87 5 10.1 7.29 11 10 11 10.5 11 10.98 10.97 11.44 10.91 11.44 10.91 11.44 10.91 11.44 10.91 11.44 10.91 11.44 10.91 11.44 10.91ZM 10 9.5C 8.72 9.5 7.6 9.29 6.7 8.97 9.52 8.8 11.75 7.67 11.98 6.24 12.66 5.94 13.2 5.56 13.55 5.14 13.55 5.14 13.55 5.14 13.55 5.14 14.76 5.63 15.5 6.33 15.5 7 15.5 8.18 13.24 9.5 10 9.5 10 9.5 10 9.5 10 9.5ZM 9.07 3.73C 9.07 3.62 8.98 3.54 8.82 3.49 8.65 3.43 8.27 3.36 7.7 3.28 7.17 3.21 6.77 3.13 6.47 3.06 6.18 2.99 5.94 2.89 5.76 2.76 5.58 2.63 5.49 2.47 5.49 2.3 5.49 2.07 5.65 1.87 5.98 1.69 6.3 1.51 6.82 1.4 7.52 1.36 7.52 1.36 7.52 1 7.52 1 7.52 1 8.47 1 8.47 1 8.47 1 8.47 1.36 8.47 1.36 9.52 1.41 10.21 1.65 10.52 2.09 10.52 2.09 9.22 2.31 9.22 2.31 8.96 2.01 8.57 1.86 8.04 1.86 7.77 1.86 7.55 1.89 7.39 1.96 7.23 2.03 7.15 2.11 7.15 2.21 7.15 2.3 7.23 2.38 7.38 2.43 7.54 2.48 7.87 2.55 8.39 2.62 8.95 2.71 9.39 2.79 9.71 2.86 10.03 2.94 10.28 3.04 10.48 3.17 10.67 3.3 10.76 3.46 10.76 3.63 10.76 3.91 10.56 4.13 10.17 4.31 9.78 4.49 9.21 4.6 8.47 4.63 8.47 4.63 8.47 5.09 8.47 5.09 8.47 5.09 7.52 5.09 7.52 5.09 7.52 5.09 7.52 4.63 7.52 4.63 6.28 4.58 5.51 4.28 5.22 3.75 5.22 3.75 6.68 3.59 6.68 3.59 6.82 3.93 7.27 4.1 8.03 4.1 8.38 4.1 8.65 4.06 8.82 3.99 8.98 3.92 9.07 3.83 9.07 3.73 9.07 3.73 9.07 3.73 9.07 3.73Z" fill="rgb(43,43,42)" />
+                </svg>
+                <span class="menu-item__title">VACANCY</span>
+            </a>
+        </div>
+    </nav>
+    <!-- /mobile menu -->
+    <!-- map pins -->
+    <button class="pin visible-xs">
+        <span class="fa fa-map-marker"></span>
+    </button>
+    <!-- map pins -->
+    <script src="js/bundle.min.js"></script>
+
+    <!--    !zolotukhin -->
+    <script type="text/javascript" src="js/myworld/build/myworld.js"></script>
+    <script type="text/javascript" src="js/myworld/dummy.js"></script>
+
+    <script type="text/javascript">
+
+        'use strict';
+
+        /**
+         * Map initialization (Google Maps callback function)
+         */
+        function initMap () {
+
+            /**
+             * Dummy data
+             */
+            var dummyData = initData();
+
+            /**
+             * Create map with center at Vladivostok
+             */
+            var map = dummyData.cities.Vladivostok.createMap('#map');
+
+            /**
+             * Filling news data
+             */
+            var $block = $('section.grid div.overview-block div.row').empty();
+
+            dummyData.cities.Vladivostok.getNews().map(function (news) {
+
+                var marker;
+
+                if (news.data('latitude') && news.data('longitude'))
+                    marker = news.createMarker(map).on('click', function () {
+                        window.location.href = 'open_news.html';
+                    });
+
+                $block.append(
+                    $('<div/>', {
+                        'class': 'grid-item grid-item--post clearfix col-sm-6'
+                    }).append(
+                        $('<a/>', {
+                            'class': 'grid-item__title',
+                            'href': 'open_news.html',
+                            'html': news.data('title')
+                        })
+                    ).append(
+                        $('<p/>', {
+                            'class': 'grid-item__desc',
+                            'html': news.data('description')
+                        })
+                    ).append(
+                        $('<p/>', {
+                            'class': 'grid-item__date',
+                            'html': news.data('datetime')
+                        })
+                    ).on('mouseover', function () {
+                        if (marker) {
+                            map.center(marker.position.latitude, marker.position.longitude);
+                            marker.infoWindow.show();
+                        };
+                    })
+                );
+
+            });
+
+            /**
+             * Turn on zoom map to view all markers
+             */
+            map.autoZoom(true);
+
+        };
+
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwAdi97cU5O2VyKxsXFnH4yAjhLJ1_ZFU&callback=initMap"></script>
+    <!--    zolotukhin!  -->
+</body>
+
+</html>
